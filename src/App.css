@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(192, 192, 192, 0.289);
+  border-bottom: 1px solid black;
+  height: 10rem;
+}
+
+.logo{
+  width: fit-content;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 40vw;
+}
+.buttonContainer button {
+  background-color: #e9d758;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0.1px outset black;
+  overflow: hidden;
+  transition: transform ease-in 0.2s;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: block;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.buttonContainer button:hover{
+  transform: scale(1.1);
+  background-color: #297373;
+  color: #ff8552;
+}
+
+.cartWidget{
+  width: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+}
+
+.cartContainer{
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+}
+
+.redCircle{
+  position: fixed;
+  background-color: #ef4444;
+  padding: 0.1rem 0.3rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+
+}
+
+
+/* .buttons {
+  background-color: #e9d758;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0.1px outset black;
+  overflow: hidden;
+  transition: transform ease-in 0.2s;
+}
+
+.buttons:hover{
+  transform: scale(1.1);
+  background-color: #297373;
+  color: #ff8552;
+}
+  .buttonText {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: block;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}*/
