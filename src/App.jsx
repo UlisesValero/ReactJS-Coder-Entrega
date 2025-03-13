@@ -1,19 +1,15 @@
-// import { useState } from 'react'
 import React from "react";
-import ReactDOM from "react-dom/client";
-import NavBar from "../components/Navbar"
+import NavBar from "./components/Navbar"
+import ItemListContainer from "./components/ItemListContainer";
 
 function App(){
   return(
-    <>
-    <NavBar/>
-    </>
+    <header className="header">
+      <NavBar />
+      <ItemListContainer text="Próximamente.."/>
+
+    </header>
   )
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 export default App

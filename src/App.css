@@ -14,9 +14,9 @@
 
 .buttonContainer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: center;
-  width: 40vw;
+  width: 50vw;
 }
 .buttonContainer button {
   background-color: #e9d758;
@@ -55,6 +55,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-self: center;
+  padding-left: 5rem;
 }
 
 .redCircle{
@@ -66,31 +67,11 @@
 
 }
 
-
-/* .buttons {
-  background-color: #e9d758;
-  width: 6rem;
-  height: 3rem;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 0.1px outset black;
-  overflow: hidden;
-  transition: transform ease-in 0.2s;
+.cartPopUp{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 25rem;
+  background-color: rgba(192, 192, 192, 0.289);
 }
-
-.buttons:hover{
-  transform: scale(1.1);
-  background-color: #297373;
-  color: #ff8552;
-}
-  .buttonText {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  display: block;
-  font-size: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-}*/
