@@ -75,3 +75,26 @@
   width: 25rem;
   background-color: rgba(192, 192, 192, 0.289);
 }
+
+.closeButton {
+  background-color: #297373;
+  color: #ff8552;
+  width: 7%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  border-radius: 0px 1rem 1rem 0px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.closeButton:hover{
+  background-color: #e9d758;
+  color: black;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}

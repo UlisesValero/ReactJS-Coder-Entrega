@@ -17,7 +17,7 @@ const handleClick = ()=> {
 <div className="cartContainer">
 <span className="redCircle">0</span>
     <ShoppingCartIcon onClick={handleClick} className="cartWidget"/>
-    <CartPopUp isOpened={open}/>
+    <CartPopUp isOpened={open} onClose={handleClick} />
     <EscKeyListener onEsc={() => setOpen(false)} />
 </div>
     )
