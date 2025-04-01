@@ -1,17 +1,23 @@
+import { useEffect, useState } from "react";
 import "../App.css"
-import CartWidget from "./CartWidget"
+import ItemList from "./ItemList";
+import withLoading from "./hoc/WithLoading";
+import ProductsList from "../lib/ProductsList";
 
-function ItemListContainer({text}){
-  return(
-    <section className="buttonContainer">
-    <button>Smash burgers</button>
-    <button>Vegan option</button>
-    <button>Fries</button>
-    <button>Contact us</button>
-    <button>{text}</button>
-    <CartWidget/>    
-    </section>
-  )
-}
+const ItemListWithLoading = withLoading(ItemList)
+
+const ItemListContainer = () => {
+  const [products, setProducts] = useState([])
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setProducts(ProductsList)
+    }, 3000)
+  }, [products])
+
+  return (
+    <ItemListWithLoading data={products}/>
+  );
+};
 
 export default ItemListContainer
