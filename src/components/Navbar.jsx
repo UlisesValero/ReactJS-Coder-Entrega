@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget"
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { Link } from "react-router"
 import { useState, useEffect, useRef } from "react"
-import Burger from "./ui/burger";
+import Burger from "./ui/Burger";
 import Menu from "./ui/Menu"
 
 
