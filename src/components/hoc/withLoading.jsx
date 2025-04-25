@@ -1,5 +1,6 @@
 import Loader from "../Loader"
 
+// eslint-disable-next-line no-unused-vars
 const withLoading = (Component) => {
     return ({ data }) => {
         return (data && (data.length || Object.keys(data).length > 0)) ? (<Component data={data} />)

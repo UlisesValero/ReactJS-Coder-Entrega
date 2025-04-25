@@ -40,14 +40,3 @@ src/
 └── index.css           # Estilos globales con Tailwind
 
 
-
-# TO DO
-# Agregar y eliminar productos del carrito (Inlcuyendo limpiar todos los productos) DONE
-## Hacer el número del ícono dinamico DONE
-# Hacer el check out (Interfaz y conexión con firebase(Haciendo el push desde vsc de las ordenes y datos del cliente)) DONE
-# una vez enviado el form  que aparezca un alert de Toastify o SweetAlert DONE
-# Diseñar la section del checkout y las rutas para llegar a dicah seccion desde "finalizar compra" del carrito DONE
-# Una vez hecha la compra, redirigir a la página root y que el carrito se muestre en 0 devuelta (Usando useNavigate) DONE
-# Cuando agregas un item al carrito, colocar un toastify DONE
-# Hacer las rutas en el componente Menu DONE
-# Hacer el deploy en Vercel
