@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import ProductsList from "../lib/ProductsList"
 import withLoading from "./hoc/WithLoading"
 import ItemDetail from "./ItemDetail"
+import { getProduct } from "../firebase/db"
 
 const ItemDetailWithLoading = withLoading(ItemDetail)
 
@@ -11,11 +11,9 @@ const ItemDetailContainer = () => {
     const [itemData, setItemData] = useState([])
 
     useEffect(() => {
-        setTimeout(() => {
-          setItemData({...ProductsList.find(i => i.id == productId)})
-        }, 3000)
-        console.log(itemData)
-      })
+      getProduct(productId)
+      .then(product => setItemData(product))
+    })
 
     return (
         <ItemDetailWithLoading data={itemData}/>

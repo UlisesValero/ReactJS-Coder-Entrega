@@ -1,19 +1,17 @@
-import { MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline"
-import { useState } from "react"
+import { MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 
-const ItemCount = () => {
-    const [count, setCount] = useState(0)
+const ItemCount = ({ count, setCount }) => {
     return (
         <div className="flex gap-4 justify-start h-24 py-4 items-center">
-            <button onClick={() => setCount(count - 1)} className={count == 0 ? `hidden`: `text-orange w-8 h-8`}>
-                <MinusCircleIcon/>
+            <button onClick={() => setCount(prev => Math.max(0, prev - 1))} className={count === 0 ? `hidden` : `text-cyan w-8 h-8`}>
+                <MinusCircleIcon />
             </button>
-            <span>{count}</span>
-            <button onClick={() => setCount(count + 1)} className={`text-orange w-8 h-8`}>
-                <PlusCircleIcon/>
+            <span className="font-bold">{count}</span>
+            <button onClick={() => setCount(prev => prev + 1)} className="text-cyan w-8 h-8">
+                <PlusCircleIcon />
             </button>
         </div>
-    )
-}
+    );
+};
 
-export default ItemCount
+export default ItemCount;

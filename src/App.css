@@ -48,12 +48,10 @@
   animation: rotation 1s linear infinite;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.toast {
+  background: #e9d758;
+  font-family: "Oswald", sans-serfif;
+  color: black;
+  font-weight: 500;
+  cursor: default;
 }

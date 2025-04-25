@@ -14,10 +14,10 @@ const Item = ({ product }) => {
                 />
             </div>
             <div className="mt-4">
-                <h1 className="font-h1 font-bold text-xl">{product.title}</h1>
-                <p className="font-p  text-sm">{product.description}</p>
+                <h1 className="font-h1 text-orange font-bold text-2xl">{product.title}</h1>
+                <p className="font-p text-sm">{product.description}</p>
             </div>
-            <div className="font-h1 font-bold text-xl my-2">{product.price}</div>
+            <div className="font-h1 font-bold text-xl my-2">${product.price}</div>
             <Link
                 to={`/product/${product.id}`}
                 className="cursor-pointer mt-2 text-center font-h1 font-bold text-xl bg-cyan text-white py-2 px-4 rounded-lg hover:text-black hover:bg-yellow">

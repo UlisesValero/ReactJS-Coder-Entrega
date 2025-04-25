@@ -1,11 +1,12 @@
 
-import ProductsList from "./ProductsList";
+import { getProducts } from "../firebase/db.js";
 
-export const getAvailableCategories = () => {
+export const getAvailableCategories = async () => {
+    const products = await getProducts();
     let categories = []
-    ProductsList.map(product => {
+    products.map(product => {
         if (!categories.find(i => i == product.category)) categories.push(product.category)
-    });
+    })
     return categories
 }
 
