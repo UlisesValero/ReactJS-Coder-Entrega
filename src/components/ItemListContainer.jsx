@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getProducts, filterByCategory } from "../firebase/db";
 import ItemList from "./ItemList";
-import WithLoading from "./hoc/WithLoading";
+import withLoading from "./hoc/withLoading";
 
-const ItemListWithLoading = WithLoading(ItemList)
+const ItemListWithLoading = withLoading(ItemList)
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([])
