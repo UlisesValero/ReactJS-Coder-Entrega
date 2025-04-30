@@ -12,7 +12,7 @@ function App() {
     <CartProvider>
     <BrowserRouter>
       <div className="relative bg-[#121413] z-0">
-        <div className="absolute w-full h-[1200px] bg-[url(../src/assets/welcomeSectionBg.jpg)] -z-10 bg-cover bg-no-repeat"></div>
+        <div className="absolute w-full h-[1200px] bg-[url(/assets/welcomeSectionBg.jpg)] -z-10 bg-cover bg-no-repeat"></div>
         <NavBar text={"Ordena aqui"}/>
         <Routes>
         <Route path="/" element={<ItemListContainer/>} />

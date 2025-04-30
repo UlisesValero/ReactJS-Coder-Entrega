@@ -3,9 +3,9 @@ import "../App.css"
 const AboutUs = () => {
     return (
         <section className="flex justify-center items-center">
-            <div className="min-h-fit lg:h-[70vh] w-full lg:w-[80vw] flex flex-col lg:flex-row lg:bg-[url(../../src/assets/favicon.png)] lg:bg-cover lg:bg-no-repeat  bg-gray-300">
+            <div className="min-h-fit lg:h-[70vh] w-full lg:w-[80vw] flex flex-col lg:flex-row lg:bg-[url(/assets/favicon.png)] lg:bg-cover lg:bg-no-repeat  bg-gray-300">
                 <div className="w-full lg:w-1/2 flex justify-center items-center px-3">
-                    <img src="../src/assets/aboutus.avif" alt="Imagen sobre nosotros" className="object-cover max-h-full w-auto" />
+                    <img src="/assets/aboutus.avif" alt="Imagen sobre nosotros" className="object-cover max-h-full w-auto" />
                 </div>
                 <div className="w-full lg:w-1/2 flex justify-center items-center p-4">
                     <div className="flex flex-col text-center gap-4">

@@ -68,7 +68,7 @@ function Navbar({ text }) {
         </div>
         <div className="lg:flex lg:flex-1/15 lg:justify-center  rounded-4xl">
           <Link to={"/"}>
-            <img className="w-[13rem]" src="../src/assets/kiddu-logo.png" alt="Imagen del logotipo" />
+            <img className="w-[13rem]" src="/assets/kiddu-logo.png" alt="Imagen del logotipo" />
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1/4 lg:justify-start lg:gap-10">

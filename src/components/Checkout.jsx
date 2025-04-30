@@ -35,7 +35,7 @@ const Checkout = () => {
     
       return (
         <section className="flex justify-center items-center">
-          <div className="bg-[url(../../src/assets/favicon.png)] bg-gray-300 bg-cover h-[70vh] w-[85%] lg:w-[60vw] lg:rounded-xl lg:shadow-lg flex flex-col justify-center items-center gap-6">
+          <div className="bg-[url(/assets/favicon.png)] bg-gray-300 bg-cover h-[70vh] w-[85%] lg:w-[60vw] lg:rounded-xl lg:shadow-lg flex flex-col justify-center items-center gap-6">
             <div className="font-h1 font-bold text-xl underline md:text-3xl lg:text-3xl bg-gray-300">
             Complete para finalizar la compra
             </div>

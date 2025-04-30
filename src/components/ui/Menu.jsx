@@ -17,7 +17,7 @@ const Menu = ({ open, setOpen }) => {
     }, []);
   return (
     <div className={`styledMenu ${open ? "flex" : "hidden"} 
-    flex-col justify-center bg-white bg-[url(../../src/assets/favicon.png)] bg-cover h-[100vh] text-left p-[2rem] fixed top-0 left-0 w-[60vw] md:w-[50vw] lg:hidden`}>
+    flex-col justify-center bg-white bg-[url(/assets/favicon.png)] bg-cover h-[100vh] text-left p-[2rem] fixed top-0 left-0 w-[60vw] md:w-[50vw] lg:hidden`}>
       <XMarkIcon onClick={() => setOpen(!open)} className="w-15 text-cyan absolute top-8 left-6"></XMarkIcon>
           <Popover className="relative cursor-pointer">
             <PopoverButton className="cursor-pointer font-h1 text-3xl font-bold text-orange ">Menu</PopoverButton>
