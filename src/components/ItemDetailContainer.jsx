@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import withLoading from "./hoc/WithLoading"
+import withLoading from "./hoc/withLoading"
 import ItemDetail from "./ItemDetail"
 import { getProduct } from "../firebase/db"
 
-const ItemDetailWithLoading = withLoading(ItemDetail)
+const ItemDetailwithLoading = withLoading(ItemDetail)
 
 const ItemDetailContainer = () => {
     const { productId } = useParams()
@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
     })
 
     return (
-        <ItemDetailWithLoading data={itemData}/>
+        <ItemDetailwithLoading data={itemData}/>
     )
 }
 

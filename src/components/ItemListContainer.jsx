@@ -4,7 +4,7 @@ import { getProducts, filterByCategory } from "../firebase/db";
 import ItemList from "./ItemList";
 import withLoading from "./hoc/withLoading";
 
-const ItemListWithLoading = withLoading(ItemList)
+const ItemListwithLoading = withLoading(ItemList)
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([])
@@ -23,7 +23,7 @@ const ItemListContainer = () => {
     fetchData();
   }, [categoryId])
 
-  return <ItemListWithLoading data={products} key={products.id} />
+  return <ItemListwithLoading data={products} key={products.id} />
 };
 
 export default ItemListContainer;
